@@ -1,12 +1,12 @@
 do
 
 function run(msg, matches)
-  return [[ *SpheroBoT*
+  return [[ SpheroBoT Helper
   
- *Version: 2.2*
+ Version: 2.2
 Developer 
 And
-Manager : [BlackLife](telegram.me/mrblacklife) .]]
+Manager : @MrBlackLife]]
 end
 
 return {
