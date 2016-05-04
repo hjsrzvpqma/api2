@@ -11,6 +11,10 @@ local function run(msg, matches)
   end 
 
 return { 
+description = " change tall link to shortlink",
+usage = {
+"!shortlink <link> : change a tall link to short link",
+},
   patterns = { 
   "^[/!]shortlink (.*)$" 
   }, 
