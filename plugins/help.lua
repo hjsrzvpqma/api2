@@ -159,14 +159,14 @@ end
 return {
   description = "Help plugin. Get info from other plugins.  ",
   usage = {
-    "!available: Show list of plugins for Sphero Helper.",
+    "!list: Show list of plugins for Sphero Helper.",
     "!helpfun: Show all commands for every plugin.",
     "!plugin> [plugin name]: Commands for that plugin.",
     "!plugin> [number]: Commands for that plugin. Type !help to get the plugin number."
   },
   patterns = {
-    "^!available$",
-    "^!help$",
+    "^!list$",
+    "^!helpfun$",
     "^!plugin> (.+)"
   },
   run = run
