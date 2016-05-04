@@ -48,7 +48,7 @@ local function plugin_help(name,number,requester)
           if ku == 'user' then -- usage for user
               if (type(plugin.usage.user) == "table") then
                   for k,v in pairs(plugin.usage.user) do
-                      text = text..v..'\n!!!!!!!!!!!!!!!!!\n'
+                      text = text..v..'\n---\n'
                   end
               elseif has_usage_data(plugin) then -- Is not empty
                   text = text..plugin.usage.user..'\n---\n'
@@ -57,7 +57,7 @@ local function plugin_help(name,number,requester)
               if requester == 'moderator' or requester == 'admin' or requester == 'sudo' then
                   if (type(plugin.usage.moderator) == "table") then
                       for k,v in pairs(plugin.usage.moderator) do
-                          text = text..v..'\n!!!!!!!!!!!!!!!!!\n'
+                          text = text..v..'\n---\n'
                       end
                   elseif has_usage_data(plugin) then -- Is not empty
                       text = text..plugin.usage.moderator..'\n---\n'
@@ -67,7 +67,7 @@ local function plugin_help(name,number,requester)
               if requester == 'admin' or requester == 'sudo' then
                   if (type(plugin.usage.admin) == "table") then
                       for k,v in pairs(plugin.usage.admin) do
-                          text = text..v..'\n!!!!!!!!!!!!!!!!!\n'
+                          text = text..v..'\n---\n'
                       end
                   elseif has_usage_data(plugin) then -- Is not empty
                       text = text..plugin.usage.admin..'\n---\n'
@@ -77,14 +77,14 @@ local function plugin_help(name,number,requester)
               if requester == 'sudo' then
                   if (type(plugin.usage.sudo) == "table") then
                       for k,v in pairs(plugin.usage.sudo) do
-                          text = text..v..'\n!!!!!!!!!!!!!!!!!\n'
+                          text = text..v..'\n---\n'
                       end
                   elseif has_usage_data(plugin) then -- Is not empty
                       text = text..plugin.usage.sudo..'\n---\n'
                   end
               end
           else
-              text = text..usage..'\n!!!!!!!!!!!!!!!!!\n'
+              text = text..usage..'\n---\n'
           end
       end
       text = text..''
@@ -95,10 +95,10 @@ local function plugin_help(name,number,requester)
 end
  
  
--- !list command
+-- !available command
 local function telegram_help()
   local i = 0
-  local text = "Tools for Sphero Helper:\n----\n"
+  local text = "Tools for SpheroBoT:\n----\n"
   -- Plugins names
   for name in pairsByKeys(plugins) do
     if plugins[name].hidden then
@@ -115,7 +115,7 @@ local function telegram_help()
 end
  
  
--- !helpfun command
+-- !help command
 local function help_all(requester)
   local ret = ""
   for name in pairsByKeys(plugins) do
@@ -140,7 +140,7 @@ local function run(msg, matches)
   end
   if matches[1] == "!list" then
     return telegram_help()
-  elseif matches[1] == "!help" then
+  elseif matches[1] == "!helpfun" then
     return help_all(requester)
   else
     local text = ""
@@ -159,8 +159,8 @@ end
 return {
   description = "Help plugin. Get info from other plugins.  ",
   usage = {
-    "!list: Show list of plugins for Sphero Helper.",
-    "!helpfun: Show all commands for every plugin.",
+    "!available: Show list of plugins for SpheroBoT.",
+    "!help: Show all commands for every plugin.",
     "!plugin> [plugin name]: Commands for that plugin.",
     "!plugin> [number]: Commands for that plugin. Type !help to get the plugin number."
   },
