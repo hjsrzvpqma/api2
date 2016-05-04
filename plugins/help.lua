@@ -95,7 +95,7 @@ local function plugin_help(name,number,requester)
 end
  
  
--- !available command
+-- !list command
 local function telegram_help()
   local i = 0
   local text = "Tools for Sphero Helper:\n----\n"
@@ -138,7 +138,7 @@ local function run(msg, matches)
   else
       requester = "user"
   end
-  if matches[1] == "!available" then
+  if matches[1] == "!list" then
     return telegram_help()
   elseif matches[1] == "!help" then
     return help_all(requester)
