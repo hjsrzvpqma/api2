@@ -128,7 +128,7 @@ local function run(msg, matches)
       a=a+1 
       result_text = result_text..a.."- "..result[a].."\n\n" 
    end 
-   return result_text.."______________________________\Helper Sphero"
+   return result_text.."______________________________\n Sphero Helper"..VERSION 
 end 
 
 return { 
