@@ -229,27 +229,27 @@ function create_config( )
     sudo_users = {85831686},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[Sphero-bot Helper v1 beta
+An advance Administration bot based on teleseed
 
-https://github.com/SEEDTEAM/TeleSeed
+[Github](https://github.com/3pehrdev/Blacklife-TG)
 
 Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
+mobin #blacklife
+crazyboy(mohammad) #blacklife
+negative #blacklife
+arian #blacklife
+satan red C L O W N TM
 
 Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
+seyedan
+imandaneshi
+potus
 Vamptacus
 
 Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+spherobot: @blacklifetgch
+teleseed: @iranseed
 ]],
     help_text_realm = [[
 Realm Commands:
