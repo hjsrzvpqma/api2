@@ -221,7 +221,7 @@ function create_config( )
     "get",
     "broadcast",
     "download_media",
-    "invite",
+    "plugins",
     "all",
     "leave_ban",
     "admin"
