@@ -82,7 +82,7 @@ local function plugin_help(name,number,requester)
                   elseif has_usage_data(plugin) then -- Is not empty
                       text = text..plugin.usage.sudo..'\n---\n'
                   end
-              e me
+              end
           else
               text = text..usage..'\n---\n'
           end
