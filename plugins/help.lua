@@ -82,7 +82,7 @@ local function plugin_help(name,number,requester)
                   elseif has_usage_data(plugin) then -- Is not empty
                       text = text..plugin.usage.sudo..'\n---\n'
                   end
-              end
+              e me
           else
               text = text..usage..'\n---\n'
           end
@@ -159,8 +159,8 @@ end
 return {
   description = "Help plugin. Get info from other plugins.  ",
   usage = {
-    "!available: Show list of plugins for SpheroBoT.",
-    "!help: Show all commands for every plugin.",
+    "!list: Show list of plugins for SpheroBoT.",
+    "!helpfun: Show all commands for every plugin.",
     "!plugin> [plugin name]: Commands for that plugin.",
     "!plugin> [number]: Commands for that plugin. Type !help to get the plugin number."
   },
