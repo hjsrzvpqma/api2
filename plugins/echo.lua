@@ -6,7 +6,7 @@ local function run(msg, matches)
     text = text:trim() 
     text,b = text:gsub('^!+','') 
   end 
-  return text 
+  return *text* 
 end 
 
 return { 
