@@ -1,9 +1,9 @@
 do
 
 function run(msg, matches)
-  return [[ <code>SpheroBoT Helper<code>
+  return [[ *SpheroBoT Helper*
   
- Version: 2.2
+Version: 2.2
 Developer 
 And
 Manager : @MrBlackLife]]
